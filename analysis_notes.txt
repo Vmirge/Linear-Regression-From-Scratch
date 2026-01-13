@@ -1,0 +1,46 @@
+TASK 3: LOSS vs EPOCH ANALYSIS
+Q1. Why does the loss curve decrease?
+
+The loss decreases because the model updates weight and bias in the direction that reduces error.
+
+Q2. What if learning rate = 0.5?
+
+With a very high learning rate, the model becomes unstable and loss may increase.
+
+Q3. What does a flat loss curve indicate?
+
+A flat curve means the model is not learning properly, usually due to very small learning rate.
+
+TASK 4: LEARNING RATE EXPERIMENT 
+Q1. Which learning rate worked best and why?
+
+Learning rate 0.01 worked best because it reduced loss smoothly and steadily.
+
+Q2. Which failed and how did you identify?
+
+Learning rate 0.5 failed because loss increased and did not converge.
+
+TASK 6: THINKING TASK
+
+ Q1 
+If we train for 10,000 epochs instead of 1,000, will the model always improve? Why or why not?
+
+Training a model for more epochs does not always mean the model will improve.
+ At the beginning of training, the model learns quickly because the error is high.
+ As the epochs increase, the error slowly reduces and reaches a minimum point.
+ After this point, training for more epochs does not reduce the error further because the model has already learned the best values of weight and bias.
+ Running training for 10,000 epochs instead of 1,000 may only waste time and computing power. 
+In some cases, too many epochs can also cause the model to fit the training data too closely, which is not good for new unseen data.
+ This means the model may stop generalizing well. Therefore, more epochs do not guarantee better performance, and it is important to stop training when the loss stops decreasing.
+
+ Q2
+Why is gradient descent preferred over directly trying all possible values of w and b?
+
+Gradient descent is preferred because trying all possible values of weight and bias is not practical.
+ The values of w and b can be very large or very small, and there are infinitely many possible combinations.
+ Checking every combination would take a huge amount of time and computing resources.
+ Gradient descent provides a smarter way to find the best values.
+It starts with an initial guess and then slowly updates the values by moving in the direction that reduces the error.
+ With each step, the model improves and moves closer to the minimum error point.
+This method is fast, efficient, and works well even for large datasets.
+ Because of this, gradient descent is widely used in machine learning instead of brute force methods.
