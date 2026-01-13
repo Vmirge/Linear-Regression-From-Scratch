@@ -1,3 +1,26 @@
+# Week 3 – Linear Regression From Scratch
+
+This repository contains my Week 3 assessment for Machine Learning.
+
+## Contents
+- linear_regression_scratch.ipynb  
+  Implementation of Linear Regression from scratch using NumPy.
+
+- analysis_notes.txt  
+  Explanation of loss behavior, learning rate experiments, and thinking tasks.
+
+## Dataset
+Salary Dataset (YearsExperience vs Salary)
+
+## Tools Used
+- Python
+- NumPy
+- Pandas
+- Matplotlib
+
+## Note
+sklearn is used only for final comparison as allowed.
+
 TASK 1: DATA UNDERSTANDING
 Q1. Why is this dataset suitable for Linear Regression?
 
@@ -20,4 +43,5 @@ Small differences occur due to optimization methods and precision.
 Q2. What sklearn does differently?
 
 sklearn uses optimized algorithms and internal checks for faster and stable training
+
 
